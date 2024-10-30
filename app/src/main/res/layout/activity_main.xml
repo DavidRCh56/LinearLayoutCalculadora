@@ -1,193 +1,309 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="#FFFFFF">
 
+    <!-- Pantalla de la calculadora -->
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
-        android:orientation="vertical">
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:padding="10dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/tvDisplay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:background="@color/black"
-            android:orientation="horizontal">
+            android:gravity="end|center_vertical"
+            android:padding="16dp"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="36sp" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                </FrameLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="3"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/button"
-                    style="?attr/materialButtonOutlinedStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Button"
-                    android:layout_weight="1"
-                    app:cornerRadius="20dp"
-                    app:strokeColor="@color/micolor" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="5"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"></LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"></LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"></LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"></LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"></LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"></LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"></LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"></LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"></LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"></LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"></LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"></LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"></LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"></LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"></LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"></LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"></LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"></LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"></LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
+        <Button
+            android:id="@+id/btnDel"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:strokeColor="@color/micolor"
+            app:strokeWidth="2dp"
+            android:text="DEL"
+            android:textColor="#000000"
+            android:textSize="18sp" />
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Fila 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAC"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:strokeColor="@color/micolor"
+            app:strokeWidth="2dp"
+            android:text="AC"
+            android:textColor="#8BC34A"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnPlusMinus"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:strokeColor="@color/micolor"
+            app:strokeWidth="2dp"
+            android:text="+/-"
+            android:textColor="#8BC34A"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnPercent"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:strokeColor="@color/micolor"
+            app:strokeWidth="2dp"
+            android:text="%"
+            android:textColor="#8BC34A"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnDivide"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:strokeColor="@color/micolor"
+            app:strokeWidth="2dp"
+            android:text="/"
+            android:textColor="#8BC34A"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- Fila 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn7"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:strokeColor="@color/micolor"
+            app:strokeWidth="2dp"
+            android:text="7"
+            android:textColor="#FFEB3B"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn8"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:strokeColor="@color/micolor"
+            app:strokeWidth="2dp"
+            android:text="8"
+            android:textColor="#FFEB3B"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn9"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:strokeColor="@color/micolor"
+            app:strokeWidth="2dp"
+            android:text="9"
+            android:textColor="#FFEB3B"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnMultiply"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:strokeColor="@color/micolor"
+            app:strokeWidth="2dp"
+            android:text="*"
+            android:textColor="#8BC34A"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- Fila 3 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn4"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:strokeColor="@color/micolor"
+            app:strokeWidth="2dp"
+            android:text="4"
+            android:textColor="#FFEB3B"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn5"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:strokeColor="@color/micolor"
+            app:strokeWidth="2dp"
+            android:text="5"
+            android:textColor="#FFEB3B"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn6"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:strokeColor="@color/micolor"
+            app:strokeWidth="2dp"
+            android:text="6"
+            android:textColor="#FFEB3B"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnMinus"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:strokeColor="@color/micolor"
+            app:strokeWidth="2dp"
+            android:text="-"
+            android:textColor="#8BC34A"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- Fila 4 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn1"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:strokeColor="@color/micolor"
+            app:strokeWidth="2dp"
+            android:text="1"
+            android:textColor="#FFEB3B"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn2"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:strokeColor="@color/micolor"
+            app:strokeWidth="2dp"
+            android:text="2"
+            android:textColor="#FFEB3B"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn3"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:strokeColor="@color/micolor"
+            app:strokeWidth="2dp"
+            android:text="3"
+            android:textColor="#FFEB3B"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnPlus"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:strokeColor="@color/micolor"
+            app:strokeWidth="2dp"
+            android:text="+"
+            android:textColor="#8BC34A"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- Fila 5 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn0"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            app:strokeColor="@color/micolor"
+            app:strokeWidth="2dp"
+            android:text="0"
+            android:textColor="#FFEB3B"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnDot"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:strokeColor="@color/micolor"
+            app:strokeWidth="2dp"
+            android:text="."
+            android:textColor="#FFEB3B"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnEquals"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:strokeColor="@color/micolor"
+            app:strokeWidth="2dp"
+            android:text="="
+            android:textColor="#8BC34A"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>
