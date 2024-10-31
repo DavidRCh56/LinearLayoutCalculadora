@@ -3,4 +3,17 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="micolor">#8f00ff</color>
+    <color name="purple_200"></color>
+    <color name="purple_500"></color>
+
+    <color name="color_boton_pincipal_sin_presionado">#DC505050</color>
+    <color name="color_boton_pincipal_presionar">#DC838383</color>
+
+    <color name="color_boton_secundario_sin_presionado">#FF9800</color>
+    <color name="color_boton_secundario_presionado">#FF5722</color>
+
+    <color name="color_boton_terciario_sin_presionado">#121212</color>
+    <color name="color_boton_terciario_presionado">#3C3939</color>
+
+
 </resources>
