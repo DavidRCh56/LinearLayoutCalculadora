@@ -1,6 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@color/color_boton_pincipal_sin_presionado"/>
-    <item android:state_pressed="true" android:drawable="@color/color_boton_pincipal_presionar"/>
+    <!-- Estado presionado -->
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/color_boton_pincipal_presionar" />
+            <corners android:radius="1000dp" />
+            <stroke android:width="2dp" android:color="@color/micolor" />
+        </shape>
+    </item>
 
+    <!-- Estado normal (sin presionar) -->
+    <item>
+        <shape>
+            <solid android:color="@color/color_boton_pincipal_sin_presionado" />
+            <corners android:radius="1000dp" />
+            <stroke android:width="2dp" android:color="@color/micolor" />
+        </shape>
+    </item>
 </selector>
